@@ -1,10 +1,11 @@
 {
   "name": "vue-context-menu",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "author": "BackRunner",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "demo": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name vue-context-menu ./src/libEntry.js && rimraf ./dist/demo.html",
+    "build:demo": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
+    "rimraf": "^2.7.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
