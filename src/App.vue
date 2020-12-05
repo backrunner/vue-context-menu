@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="containter" v-context="'contextMenu'">
+    <div class="container" v-context="'contextMenu'">
       <div class="title">
         <span>@pwp-app/vue-context-menu</span>
       </div>
@@ -37,7 +37,7 @@ body,
   margin: 0;
   padding: 0;
 }
-.containter {
+.container {
   width: 100%;
   height: 100%;
   .title {

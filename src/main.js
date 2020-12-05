@@ -6,6 +6,7 @@ Vue.config.productionTip = false;
 
 Vue.use(VueContextMenu, {
   useItem: true,
+  mobileSupport: true,
 });
 
 new Vue({

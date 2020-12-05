@@ -41,14 +41,18 @@ export default {
   },
   methods: {
     open(e) {
+      const clientX = e.clientX || e.touches[0].clientX;
+      const clientY = e.clientY || e.touches[0].clientY;
+
+      this.show = true;
       document.documentElement.addEventListener('mousedown', this.close);
       document.documentElement.addEventListener('mousewheel', this.close);
-      this.show = true;
+
       if (this.overflow) {
         this.style = {
           ...this.baseStyles,
-          left: `${e.clientX}px`,
-          top: `${e.clientY}px`,
+          left: `${clientX}px`,
+          top: `${clientY}px`,
         };
       } else {
         this.style = {
@@ -69,19 +73,19 @@ export default {
         const limitHeight = vpHeight - menuHeight;
         let left = -99999;
         let top = -99999;
-        if (e.clientX < 0) {
+        if (clientX < 0) {
           left = 0;
-        } else if (e.clientX > limitWidth) {
+        } else if (clientX > limitWidth) {
           left = limitWidth;
         } else {
-          left = e.clientX;
+          left = clientX;
         }
-        if (e.clientY < 0) {
+        if (clientY < 0) {
           top = 0;
-        } else if (e.clientY > limitHeight) {
+        } else if (clientY > limitHeight) {
           top = limitHeight;
         } else {
-          top = e.clientY;
+          top = clientY;
         }
         this.style = {
           ...this.baseStyles,
