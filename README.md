@@ -27,11 +27,8 @@ Then you can use it like this:
 
 ```vue
 <template>
-    <div
-      class="container"
-      v-context="'contextMenu'"
-      >
-    </div>
+  <div id="app">
+    <div class="container" v-context="'contextMenu'"></div>
     <ContextMenu
       ref="contextMenu"
       @item-clicked="itemClicked"
