@@ -60,7 +60,7 @@ If you wanna bind click event in this way, you should import `ContextMenuItem` a
 
 Also you can bind a function to the `clicked` event of `ContextMenuItem`, the `name` property is not required in this way.
 
-`ContextMenuItem` is a optional component, if you don't like it, you can write your own things and put them into the `ContextMenu`.
+`ContextMenuItem` is a optional component, if you don't like it, you can write your own things and put them under the `ContextMenu`.
 
 ## Props
 
