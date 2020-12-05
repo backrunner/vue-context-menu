@@ -21,7 +21,7 @@ Vue.use(VueContextMenu, {
 });
 ```
 
-Also you can set a alias to resolve `@pwp-app/vue-context-menu` to `vue-context-menu`.
+Also you can set an alias to resolve `@pwp-app/vue-context-menu` to `vue-context-menu`.
 
 Then you can use it like this:
 
