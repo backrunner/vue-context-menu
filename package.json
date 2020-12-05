@@ -1,7 +1,8 @@
 {
-  "name": "vue-context-menu",
+  "name": "@pwp-app/vue-context-menu",
   "version": "1.0.0",
   "author": "BackRunner",
+  "main": "dist/vue-context-menu.umd.js",
   "scripts": {
     "demo": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue-context-menu ./src/libEntry.js && rimraf ./dist/demo.html",
