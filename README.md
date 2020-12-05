@@ -73,6 +73,7 @@ As for `ContextMenu`, it has these two props:
 Decide the width of menu.
 
 type: `Number`
+
 default: `120`
 
 #### overflow
@@ -80,6 +81,7 @@ default: `120`
 If set to false, **the menu will always in the viewport and never overflow to the outside.**
 
 type: `Boolean`
+
 default: `false`
 
 ### ContextMenuItem
@@ -97,6 +99,7 @@ type: `String`
 If you don't want the menu automatically close after you clicked the menu item, you can set this prop to `true`.
 
 type: `Boolean`
+
 default: `false`
 
 ## License
