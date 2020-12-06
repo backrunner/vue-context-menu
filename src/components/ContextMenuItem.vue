@@ -1,7 +1,7 @@
 <template>
   <li
     class="context-menu__item"
-    @click.stop="handleClick"
+    :data-name="name"
     @contextmenu.prevent.stop
     >
     <slot></slot>
@@ -14,19 +14,6 @@ export default {
     name: {
       type: String,
       default: '',
-    },
-    manuallyClose: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  methods: {
-    handleClick() {
-      this.$emit('clicked');
-      this.$parent.itemClicked(this.name);
-      if (!this.manuallyClose) {
-        this.$parent.close();
-      }
     },
   },
 };

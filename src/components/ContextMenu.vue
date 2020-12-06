@@ -4,7 +4,7 @@
     ref="menu"
     class="context-menu"
     v-if="show"
-    @click.stop
+    @click.stop="handleItemClick"
     @contextmenu.prevent.stop
     :style="style"
     >
@@ -20,6 +20,10 @@ export default {
       default: 120,
     },
     overflow: {
+      type: Boolean,
+      default: false,
+    },
+    manuallyClose: {
       type: Boolean,
       default: false,
     },
@@ -45,7 +49,7 @@ export default {
       const clientY = e.clientY || e.touches[0].clientY;
 
       this.show = true;
-      document.documentElement.addEventListener('mousedown', this.close);
+      document.documentElement.addEventListener('click', this.close);
       document.documentElement.addEventListener('mousewheel', this.close);
 
       if (this.overflow) {
@@ -105,12 +109,11 @@ export default {
       document.documentElement.removeEventListener('mousewheel', this.close);
       this.show = false;
     },
-    itemClicked(name) {
-      if (!name) {
-        // eslint-disable-next-line no-console
-        console.warn('[vue-context-menu] Name of items should not be empty.');
+    handleItemClick(e) {
+      this.$emit('item-clicked', e.target.dataset.name);
+      if (!this.manuallyClose) {
+        this.close();
       }
-      this.$emit('item-clicked', name);
     },
   },
 };

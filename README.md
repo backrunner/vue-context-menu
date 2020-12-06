@@ -55,7 +55,7 @@ The `name` is the name you've already bound to `ContextMenuItem`.
 
 If you wanna bind click event in this way, you should import `ContextMenuItem` as well, and be sure you've already set a name to `ContextMenuItem`.
 
-Also you can bind a function to the `clicked` event of `ContextMenuItem`, the `name` property is not required in this way.
+Also you can bind a function to `click.native` of `ContextMenuItem`, the `name` property is not required in this way, but this is NOT recommended.
 
 `ContextMenuItem` is a optional component, if you don't like it, you can write your own things and put them under the `ContextMenu`.
 
@@ -81,6 +81,14 @@ type: `Boolean`
 
 default: `false`
 
+#### manuallyClose
+
+If you don't want the menu automatically close after you clicked the menu item, you can set this prop to `true`.
+
+type: `Boolean`
+
+default: `false`
+
 ### ContextMenuItem
 
 As for `ContextMenuItem`, it has these two props:
@@ -90,14 +98,6 @@ As for `ContextMenuItem`, it has these two props:
 Be used to judge which item has been clicked.
 
 type: `String`
-
-#### manuallyClose
-
-If you don't want the menu automatically close after you clicked the menu item, you can set this prop to `true`.
-
-type: `Boolean`
-
-default: `false`
 
 ## License
 
