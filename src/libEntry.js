@@ -40,9 +40,9 @@ const component = {
             clearTimeout(el[timerName]);
             delete el[timerName];
           };
-          el.addEventListener('touchstart', touchStartHandler);
-          el.addEventListener('touchmove', touchMoveHandler);
-          el.addEventListener('touchend', touchEndHandler);
+          el.addEventListener('touchstart', touchStartHandler, { passive: true });
+          el.addEventListener('touchmove', touchMoveHandler, { passive: true });
+          el.addEventListener('touchend', touchEndHandler, { passive: true });
           el[touchStartHandlerName] = touchStartHandler;
           el[touchMoveHandlerName] = touchMoveHandler;
           el[touchEndHandlerName] = touchEndHandler;
@@ -53,9 +53,9 @@ const component = {
         delete el[contextHandlerName];
         vNode.context.$refs[binding.value].close();
         if (options && options.mobileSupport) {
-          el.removeEventListener('touchstart', el[touchStartHandlerName]);
-          el.removeEventListener('touchmove', el[touchMoveHandlerName]);
-          el.removeEventListener('touchend', el[touchEndHandlerName]);
+          el.removeEventListener('touchstart', el[touchStartHandlerName], { passive: true });
+          el.removeEventListener('touchmove', el[touchMoveHandlerName], { passive: true });
+          el.removeEventListener('touchend', el[touchEndHandlerName], { passive: true });
           delete el[touchStartHandlerName];
           delete el[touchMoveHandlerName];
           delete el[touchEndHandlerName];
