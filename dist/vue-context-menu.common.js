@@ -1019,7 +1019,9 @@ var libEntry_component = {
           el.addEventListener('touchstart', touchStartHandler, {
             passive: true
           });
-          el.addEventListener('touchmove', touchMoveHandler);
+          el.addEventListener('touchmove', touchMoveHandler, {
+            passive: true
+          });
           el.addEventListener('touchend', touchEndHandler, {
             passive: true
           });
