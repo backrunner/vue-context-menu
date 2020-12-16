@@ -41,7 +41,7 @@ const component = {
             delete el[timerName];
           };
           el.addEventListener('touchstart', touchStartHandler, { passive: true });
-          el.addEventListener('touchmove', touchMoveHandler, { passive: true });
+          el.addEventListener('touchmove', touchMoveHandler);
           el.addEventListener('touchend', touchEndHandler, { passive: true });
           el[touchStartHandlerName] = touchStartHandler;
           el[touchMoveHandlerName] = touchMoveHandler;
