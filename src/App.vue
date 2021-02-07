@@ -4,6 +4,9 @@
       <div class="title" v-context="'contextMenu'">
         <span>@pwp-app/vue-context-menu</span>
       </div>
+      <div class="title" v-context="'contextMenu2'">
+        <span>Test zone 2</span>
+      </div>
     </div>
     <ContextMenu
       ref="contextMenu"
@@ -12,6 +15,14 @@
       <ContextMenuItem name="1">1</ContextMenuItem>
       <ContextMenuItem name="2">2</ContextMenuItem>
       <ContextMenuItem name="3">3</ContextMenuItem>
+    </ContextMenu>
+    <ContextMenu
+      ref="contextMenu2"
+      @item-clicked="itemClicked"
+      >
+      <ContextMenuItem name="4">4</ContextMenuItem>
+      <ContextMenuItem name="5">5</ContextMenuItem>
+      <ContextMenuItem name="6">6</ContextMenuItem>
     </ContextMenu>
   </div>
 </template>

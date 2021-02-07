@@ -59,9 +59,9 @@ export default {
       const clientY = e.clientY || e.touches[0].clientY;
 
       this.show = true;
-      document.documentElement.addEventListener('click', this.close);
-      document.documentElement.addEventListener('contextmenu', this.close);
-      document.documentElement.addEventListener('mousewheel', this.close);
+      document.addEventListener('click', this.close);
+      document.addEventListener('contextmenu', this.close, true);
+      document.addEventListener('mousewheel', this.close);
 
       if (this.overflow) {
         this.style = {
@@ -116,9 +116,9 @@ export default {
         left: '-99999px',
         top: '-99999px',
       };
-      document.documentElement.removeEventListener('click', this.close);
-      document.documentElement.removeEventListener('contextmenu', this.close);
-      document.documentElement.removeEventListener('mousewheel', this.close);
+      document.removeEventListener('click', this.close);
+      document.removeEventListener('contextmenu', this.close, true);
+      document.removeEventListener('mousewheel', this.close);
       this.show = false;
     },
     handleItemClick(e) {
