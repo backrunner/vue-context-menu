@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div class="container" v-context="'contextMenu'">
-      <div class="title">
+    <div class="container">
+      <div class="title" v-context="'contextMenu'">
         <span>@pwp-app/vue-context-menu</span>
       </div>
     </div>
@@ -42,15 +42,19 @@ body,
   height: 100%;
   .title {
     width: 100%;
-    padding-top: 120px;
+    margin-top: 120px;
+    padding: 64px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     user-select: none;
+    border: 1px solid #999;
   }
 }
 .context-menu {
   border: 1px solid #666;
+  background: #fff;
   &__item {
     padding: 8px 12px;
     color: #999;

@@ -60,6 +60,7 @@ export default {
 
       this.show = true;
       document.documentElement.addEventListener('click', this.close);
+      document.documentElement.addEventListener('contextmenu', this.close);
       document.documentElement.addEventListener('mousewheel', this.close);
 
       if (this.overflow) {
@@ -115,7 +116,8 @@ export default {
         left: '-99999px',
         top: '-99999px',
       };
-      document.documentElement.removeEventListener('mousedown', this.close);
+      document.documentElement.removeEventListener('click', this.close);
+      document.documentElement.removeEventListener('contextmenu', this.close);
       document.documentElement.removeEventListener('mousewheel', this.close);
       this.show = false;
     },
