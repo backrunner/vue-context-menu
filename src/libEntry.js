@@ -19,17 +19,18 @@ const component = {
     // directive
     Vue.directive('context', {
       bind(el, binding, vNode) {
+        const ref = binding.value || 'contextMenu';
         const contextHandler = (e) => {
           e.preventDefault();
           e.stopPropagation();
-          vNode.context.$refs[binding.value].open(e);
+          vNode.context.$refs[ref].open(e);
         };
         el.addEventListener('contextmenu', contextHandler);
         el[contextHandlerName] = contextHandler;
         if (options && options.mobileSupport) {
           const touchStartHandler = (e) => {
             el[timerName] = setTimeout(() => {
-              vNode.context.$refs[binding.value].open(e);
+              vNode.context.$refs[ref].open(e);
             }, options.touchTimeout || 600);
           };
           const touchMoveHandler = () => {
@@ -51,7 +52,8 @@ const component = {
       unbind(el, binding, vNode) {
         el.removeEventListener('contextmenu', el[contextHandlerName]);
         delete el[contextHandlerName];
-        vNode.context.$refs[binding.value].close();
+        const ref = binding.value || 'contextMenu';
+        vNode.context.$refs[ref].close();
         if (options && options.mobileSupport) {
           el.removeEventListener('touchstart', el[touchStartHandlerName], { passive: true });
           el.removeEventListener('touchmove', el[touchMoveHandlerName], { passive: true });

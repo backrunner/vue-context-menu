@@ -35,6 +35,11 @@ export default {
       style: null,
     };
   },
+  mounted() {
+    if (!this.$parent.$refs.contextMenu) {
+      this.$parent.$refs.contextMenu = this;
+    }
+  },
   computed: {
     baseStyles() {
       let width;
