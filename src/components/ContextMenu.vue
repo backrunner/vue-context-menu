@@ -41,7 +41,7 @@ export default {
       if (typeof this.width === 'number') {
         width = `${this.width}px`;
       } else if (typeof this.width === 'string') {
-        if (/\d+/.test(this.width)) {
+        if (/^\d+$/.test(this.width)) {
           width = `${this.width}px`;
         } else {
           width = this.width;
