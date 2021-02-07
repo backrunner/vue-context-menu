@@ -87,6 +87,17 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "0c98":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_10_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_3_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContextMenu_vue_vue_type_style_index_0_id_e207c75a_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("4344");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_10_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_3_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContextMenu_vue_vue_type_style_index_0_id_e207c75a_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_10_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_3_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContextMenu_vue_vue_type_style_index_0_id_e207c75a_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+
 /***/ "1307":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -200,6 +211,35 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
+
+/***/ }),
+
+/***/ "39e1":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".context-menu[data-v-e207c75a]{list-style:none;padding:0;margin:0;box-sizing:border-box;z-index:2333}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "4344":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("39e1");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("0e67e1e6", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -469,20 +509,6 @@ function applyToTag (styleElement, obj) {
 
 /***/ }),
 
-/***/ "7f0f":
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".context-menu[data-v-7884dce3]{list-style:none;padding:0;margin:0;box-sizing:border-box;z-index:2333}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ "8875":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -568,17 +594,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
-/***/ "974c":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_10_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_3_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContextMenu_vue_vue_type_style_index_0_id_7884dce3_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("b845");
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_10_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_3_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContextMenu_vue_vue_type_style_index_0_id_7884dce3_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_10_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_3_node_modules_less_loader_dist_cjs_js_ref_10_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContextMenu_vue_vue_type_style_index_0_id_7884dce3_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
-
-
-/***/ }),
-
 /***/ "b219":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -601,21 +616,6 @@ exports.push([module.i, ".context-menu__item[data-v-b0073012]{list-style:none}",
 // Exports
 module.exports = exports;
 
-
-/***/ }),
-
-/***/ "b845":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("7f0f");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("499e").default
-var update = add("116d4b23", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -650,12 +650,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e24c81e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ContextMenu.vue?vue&type=template&id=7884dce3&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e24c81e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ContextMenu.vue?vue&type=template&id=e207c75a&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.show)?_c('ul',{ref:"menu",staticClass:"context-menu",style:(_vm.style),attrs:{"id":_vm.domId},on:{"click":function($event){$event.stopPropagation();return _vm.handleItemClick($event)},"contextmenu":function($event){$event.preventDefault();$event.stopPropagation();}}},[_vm._t("default")],2):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/ContextMenu.vue?vue&type=template&id=7884dce3&scoped=true&
+// CONCATENATED MODULE: ./src/components/ContextMenu.vue?vue&type=template&id=e207c75a&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ContextMenu.vue?vue&type=script&lang=js&
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -727,9 +727,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       var clientX = e.clientX || e.touches[0].clientX;
       var clientY = e.clientY || e.touches[0].clientY;
       this.show = true;
-      document.documentElement.addEventListener('click', this.close);
-      document.documentElement.addEventListener('contextmenu', this.close);
-      document.documentElement.addEventListener('mousewheel', this.close);
+      document.addEventListener('click', this.close);
+      document.addEventListener('contextmenu', this.close, true);
+      document.addEventListener('mousewheel', this.close);
 
       if (this.overflow) {
         this.style = _objectSpread(_objectSpread({}, this.baseStyles), {}, {
@@ -786,9 +786,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         left: '-99999px',
         top: '-99999px'
       });
-      document.documentElement.removeEventListener('click', this.close);
-      document.documentElement.removeEventListener('contextmenu', this.close);
-      document.documentElement.removeEventListener('mousewheel', this.close);
+      document.removeEventListener('click', this.close);
+      document.removeEventListener('contextmenu', this.close, true);
+      document.removeEventListener('mousewheel', this.close);
       this.show = false;
     },
     handleItemClick: function handleItemClick(e) {
@@ -802,8 +802,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 });
 // CONCATENATED MODULE: ./src/components/ContextMenu.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_ContextMenuvue_type_script_lang_js_ = (ContextMenuvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/ContextMenu.vue?vue&type=style&index=0&id=7884dce3&lang=less&scoped=true&
-var ContextMenuvue_type_style_index_0_id_7884dce3_lang_less_scoped_true_ = __webpack_require__("974c");
+// EXTERNAL MODULE: ./src/components/ContextMenu.vue?vue&type=style&index=0&id=e207c75a&lang=less&scoped=true&
+var ContextMenuvue_type_style_index_0_id_e207c75a_lang_less_scoped_true_ = __webpack_require__("0c98");
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -920,7 +920,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "7884dce3",
+  "e207c75a",
   null
   
 )
