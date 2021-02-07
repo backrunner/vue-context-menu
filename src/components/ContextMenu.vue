@@ -16,7 +16,7 @@
 export default {
   props: {
     width: {
-      type: Number,
+      type: [Number, String],
       default: 120,
     },
     overflow: {
@@ -37,9 +37,19 @@ export default {
   },
   computed: {
     baseStyles() {
+      let width;
+      if (typeof this.width === 'number') {
+        width = `${this.width}px`;
+      } else if (typeof this.width === 'string') {
+        if (/\d+/.test(this.width)) {
+          width = `${this.width}px`;
+        } else {
+          width = this.width;
+        }
+      }
       return {
         position: 'fixed',
-        width: `${this.width}px`,
+        width,
       };
     },
   },
