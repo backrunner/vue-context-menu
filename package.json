@@ -1,6 +1,6 @@
 {
   "name": "@pwp-app/vue-context-menu",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": "BackRunner",
   "main": "dist/vue-context-menu.umd.js",
   "scripts": {
