@@ -125,5 +125,6 @@ export default {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  z-index: 2333;
 }
 </style>
